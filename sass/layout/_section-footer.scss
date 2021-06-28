@@ -1,0 +1,7 @@
+.footer {
+  background-color: chocolate;
+  height: 20vh;
+  @include flex-row;
+  align-items: center;
+
+}

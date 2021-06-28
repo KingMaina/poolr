@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  // defines 1 rem
+  font-size: 62.5%;
+
+  @include respond(big-desktop-4k) {
+    //2560px
+    font-size: 65%;
+  }
+
+  @include respond(big-desktop) {
+    //1800px
+    font-size: 60%;
+  }
+
+  @include respond(laptop-large) {
+    //1440px
+    font-size: 45%;
+  }
+
+  @include respond(tab-land) {
+    //1200px
+    font-size: 35%;
+  }
+
+  @include respond(laptop) {
+    //1024px
+    font-size: 31%;
+  }
+  
+  @include respond(tab-port) {
+    // 900px
+    font-size: 30%;
+  }
+  
+  @include respond(tablet) {
+    //768px
+    font-size: 30%;
+  }
+  
+  @include respond(phone) {
+    // 600px
+    font-size: 30%;
+  }
+  @include respond(phone-large) {
+    // 425px
+    font-size: 30%;
+  }
+  @include respond(phone-medium) {
+    // 375px
+    font-size: 28%;
+  }
+  @include respond(phone-small) {
+    // 320px
+    font-size: 15%;
+  }
+
+
+
+
+
+
+
+}

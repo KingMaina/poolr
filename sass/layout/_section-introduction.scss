@@ -1,0 +1,30 @@
+.section-introduction{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .poolr-content,
+    .poolr-illustration,
+    .goal-content,
+    .goal-illustration{
+        flex:.5;
+        background-color: coral;
+    }
+
+    .poolr-illustration,
+    .goal-illustration{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .poolr-illustration{
+        
+        &-svg{
+
+        }
+    }
+    .goal-content{
+
+    }
+}

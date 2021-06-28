@@ -1,0 +1,480 @@
+// BODY STYLING
+body {
+  // min-height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-primary;
+  box-sizing: border-box;
+}
+
+// .scroll-effect{
+//   scroll-snap-type: y mandatory;
+//   scroll-snap-type: mandatory;
+//   scroll-snap-points-y: repeat(300px);
+//   height: 100vh;
+//   overflow-y: scroll;
+//   animation: scroll-snap;
+
+//   & > *{
+//     scroll-snap-align: start;
+//   }
+// }
+
+// .heading-primary{
+//     color: $color-white;
+//     text-transform: uppercase;
+//     text-align: center;
+//     margin-bottom: 6rem;
+//     backface-visibility: hidden; /* to fix animation shake */
+
+//     &--main{
+//         display: block;
+//         font-size: 6.8rem;
+//         font-weight: 700;
+//         letter-spacing: 2rem;
+//         animation: moveInLeft 1s ease-out;
+//     }
+//     &--sub{
+//         display: block;
+//         margin-bottom: 5rem;
+//         font-size: 2.5rem;
+//         font-weight: 700;
+//         letter-spacing: 1rem;
+//         animation: moveInRight 1s ease-out;
+//     }
+// }
+
+// .heading-secondary{
+//     font-size: 3.5rem;
+//     text-transform: uppercase;
+//     font-weight: 700;
+//     display: inline-block;
+//     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     color: transparent;
+//     letter-spacing: 2px;
+//     transition: all .2s;
+
+//     &:hover{
+//         transform: skewY(5deg) skewX(10deg) scale(1.1);
+//         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+//     }
+// }
+// .heading-tertiary{
+//     font-size: $default-font-size;
+//     font-weight: 700;
+//     text-transform: uppercase;
+// }
+// .paragraph{
+//     font-size: $default-font-size;
+
+//     &:not(:last-child){
+//         margin-bottom: 3rem;
+//     }
+// }
+.heading-primary {
+}
+.secondary-heading {
+  color: $color-primary;
+  font-size: $heading-secondary;
+  font-weight: 600;
+
+  @include respond(tab-port){
+    font-size: 1rem;
+}
+}
+// HEADER SECTION
+.header {
+
+}
+
+
+// INTRODUCTION SECTION PAGE
+.poolr-content,
+.goal-content {
+  padding-left: 5rem;
+  padding-top: 9rem;
+
+  @include respond(phone){
+    padding-left: 2.5rem;
+    padding-top: 4rem;
+  }
+  @include respond(phone-medium){
+
+  }
+  @include respond(phone-small){
+    padding-left: 1rem;
+    padding-top:1rem;
+  }
+
+  &-heading {
+    font-size: $heading-primary;
+    color: $color-primary;
+    font-weight: 600;
+
+
+    @include respond(big-desktop) {
+      font-size: 5rem;
+    }
+    @include respond(tab-land) {
+      font-size: 7rem;
+    }
+    @include respond(laptop-large) {
+      font-size: 6rem;
+    }
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+    @include respond(tablet){
+      font-size: 5rem;
+    }
+    @include respond(phone){
+      font-size: 4.5rem;
+    }
+    @include respond(phone-large){
+      font-size: 2.6rem;
+    }
+    @include respond(phone-medium){
+      font-size: 2.6rem;
+    }
+    @include respond(phone-small){
+      font-size: 10rem;
+    }
+  }
+
+  &-paragraph {
+    font-size: $paragraph;
+    margin-top: 4rem;
+    // max-width: 90rem;
+
+    @include respond(big-desktop) {
+      font-size: 3.5rem;
+    }
+
+    @include respond(laptop-large) {
+      font-size: 3.5rem;
+    }
+    @include respond(tab-land) {
+      font-size:3.4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(tablet){
+      font-size: 3rem;
+      width: 20em;
+    }
+    @include respond(phone){
+      font-size: 2.9rem;
+      width: 17em;
+    }
+    @include respond(phone-large){
+      font-size: 1.3rem;
+    }
+    @include respond(phone-medium){
+      font-size: 1.3rem;
+    }
+    @include respond(phone-small){
+      font-size: 5rem;
+    }
+
+  }
+}
+.poolr-illustration{
+
+}
+
+// ABOUT SECTION
+.about-content {
+  &-heading {
+    font-size: $heading-primary;
+    color: $color-primary;
+    padding-bottom: 8rem;
+    font-weight: 600;
+
+    @include respond(tab-land) {
+      font-size: 7rem;
+    }
+    @include respond(tab-port) {
+      font-size: 5rem;
+    }
+    @include respond(phone) {
+      padding-top: 10rem;
+    }
+    @include respond(phone-large) {
+      font-size: 4rem;
+    }
+  }
+  &-paragraph {
+    position: relative;
+    font-size: $paragraph;
+    font-weight: 500;
+    color: $color-primary;
+
+    @include respond(big-desktop-4k) {
+      font-size: 3.5rem;
+    }
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      width:80rem;
+    }
+    @include respond(tablet) {
+      font-size: 2.5rem;
+      width: 80rem;
+    }
+    @include respond(phone) {
+
+      width: 70rem;
+    }
+  }
+  &-paragraph:not(:last-child) {
+    padding-bottom: 4rem;
+  }
+  &-paragraph::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/icons/false.svg);
+    background-size: 5rem 5rem;
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+    top: 0.5rem;
+    left: -7rem;
+    color: $color-primary;
+  }
+}
+
+// ****CONTACT SECTION****
+// CONTACT DETAILS
+.section-contact-wrapper-details > *:not(:last-child) {
+  padding: 2rem 15rem;
+  display: flex;
+  flex-direction: row;
+
+  @include respond(big-desktop) {
+    padding: 2rem 0rem;
+  }
+}
+.section-contact-heading > h2 {
+  @include respond(tab-land) {
+    font-size: 7rem;
+  }
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
+}
+.contact-telephone,
+.contact-instagram,
+.contact-email {
+  min-width: 100%;
+
+  &-icon {
+    height: 5rem;
+    width: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-primary;
+    margin-right: 2rem;
+  }
+
+  &-text {
+    font-size: $medium-text-font-size;
+    color: $color-primary;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+.contact-telephone {
+  &-icon {
+    background-image: url(../../images/icons/phone.svg);
+  }
+}
+.contact-instagram {
+  &-icon {
+    background-image: url(../../images/icons/phone.svg);
+    color: $color-primary;
+  }
+  &-text {
+    text-decoration: none;
+  }
+}
+.contact-email {
+  &-icon {
+    background-image: url(../../images/icons/phone.svg);
+  }
+}
+// COMING SOON SECTION
+.coming-soon {
+  width: 100%;
+  @include flex-column;
+  padding: 5rem;
+
+  &-heading {
+    font-size: $large-text-font-size;
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  &-appstore-icons {
+    @include flex-row;
+    padding: 3rem;
+    justify-content: space-around;
+    background-color: chartreuse;
+
+    &-google-play,
+    &-ios-store {
+      background-image: url(../../images/icons/ios-app-store.png);
+      background-size: cover;
+      background-size: 10rem 10rem;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &-logo-box {
+    @include flex-row;
+
+    .logo,
+    .logo-text {
+      padding: 5rem;
+    }
+
+    .logo {
+      &-text {
+        font-size: $large-text-font-size;
+        color: $color-primary;
+        font-size: 600;
+      }
+    }
+  }
+}
+
+// ***FORM SECTION***
+.section-contact-wrapper-form {
+  background: rgba($color-white, 0.75);
+  box-shadow: 0.5rem 0.5rem 10rem rgba(39, 9, 73, 0.16);
+  position: absolute;
+  right: 10rem;
+  top: -4rem;
+  border-radius: 1.5rem;
+  .contact-form {
+    &-heading {
+      font-size: $medium-text-font-size;
+      color: $color-primary;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    .contact-form-label {
+      color: $color-primary;
+      font-size: 2rem;
+      // padding: 2rem;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    #contact-form-message {
+      border: 0.2rem solid $color-primary;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    #contact-form-message,
+    input[type="submit"] {
+      padding: 2rem 3rem;
+      font-size: 1.6rem;
+      outline: none;
+      border-radius: 0.5rem;
+    }
+
+    #contact-form-message {
+      resize: none;
+    }
+
+    input[type="submit"] {
+      margin-top: 5rem;
+      font-size: $small-text-font-size;
+      text-transform: uppercase;
+      color: $color-white;
+      background-color: $color-primary;
+      font-weight: 600;
+      font-family: "Montserrat Alternates", sans-serif;
+      opacity: 0.6;
+
+      &:hover {
+        background-color: $color-primary;
+        opacity: 1;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+// ***FOOTER***
+.footer {
+  padding: 2rem 4rem;
+  &-instagram {
+    background-color: lawngreen;
+    margin-left: 20rem;
+  }
+  &-logo-ig {
+    background-color: aquamarine;
+    width: 2rem;
+    height: 2rem;
+  }
+  &-ig-link {
+    font-size: $small-text-font-size;
+    color: $color-primary;
+    font-weight: 600;
+    text-decoration: none;
+
+    @include respond(tab-land) {
+      font-size: 5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+  }
+  &-nav {
+    margin-left: 40rem;
+    padding-right: 1rem 3rem;
+
+    @include respond(tab-port){
+      margin-left: 20rem;
+  }
+    &-link {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 2rem;
+      margin-left: 5rem;
+      font-weight: 600;
+
+
+      @include respond(big-desktop-4k) {
+        font-size: 3.6rem;
+      }
+
+      @include respond(big-desktop) {
+        font-size: 3rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 3rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+        margin-left:6rem;
+      }
+    }
+  }
+}
